@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.background {
+  background: url('https://advisor-walkr-bucket.s3.amazonaws.com/hero.png');
+  background-size: 'cover';
+  background-position: center ;
+  background-repeat: no-repeat;
+}
+
+.card {
+  border-color: white;
+}
