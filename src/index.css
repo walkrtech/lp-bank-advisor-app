@@ -1,17 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
 
-* {
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
+.ff-regular {
+  font-family: 'Poppins';
+}
+
+.ff-medium {
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.ff-semiBold {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.ff-semiBold {
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.ff-bold {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+.text-primary {
+  color: #033C59 !important;
+}
+
+.text-secondary {
+  color: #29BCBA !important;
+}
+
+.text-gray {
+  color: #5D6B6F !important;
 }
 
 .background {
-  background: url('https://advisor-walkr-bucket.s3.amazonaws.com/hero.png');
-  background-size: 'cover';
-  background-position: center ;
+  background-image: url(https://advisor-walkr-bucket.s3.amazonaws.com/hero.png);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+.background-mockup {
+  background-image: url(https://walkr-bucket.s3.amazonaws.com/backgroundMockup.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-white {
+  background-color: #FAFAFA;
+}
+
+.navbar-scrolled {
+  background-color: #ffffff;
+  /* Defina a cor de fundo desejada aqui */
+  transition: background-color 0.3s ease;
+  /* Adicione uma transição suave para o efeito de mudança de cor */
 }
 
 .card {
   border-color: white;
+}
+
+.free-card {
+  background-image: url(https://walkr-bucket.s3.amazonaws.com/freeCard.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.premium-card {
+  background-image: url(https://walkr-bucket.s3.amazonaws.com/premiumCard.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advisor-card {
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20;
+
 }
