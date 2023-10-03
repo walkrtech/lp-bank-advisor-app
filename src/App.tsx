@@ -1,5 +1,6 @@
 import './App.css'
 import { Carrer } from './components/Carrer/Carrer'
+import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { Mockups } from './components/Mockups/Mockups'
 import { Navbar } from './components/Navbar/Navbar'
@@ -14,6 +15,7 @@ function App() {
       <Carrer />
       <Mockups />
       <Plans />
+      <Footer />
     </>
   )
 }

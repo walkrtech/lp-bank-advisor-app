@@ -61,10 +61,6 @@
   /* Adicione uma transição suave para o efeito de mudança de cor */
 }
 
-.card {
-  border-color: white;
-}
-
 .free-card {
   background-image: url(https://walkr-bucket.s3.amazonaws.com/freeCard.svg);
   background-size: cover;
@@ -82,5 +78,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20;
+}
 
+.blue-risked {
+  background-image: url(https://walkr-bucket.s3.amazonaws.com/blueRiskedBg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 24px;
+}
+
+.background-footer {
+  background-image: url(https://walkr-bucket.s3.amazonaws.com/faq.svg);
+}
+
+.more {
+  height: 18px;
+  width: 18px;
 }
