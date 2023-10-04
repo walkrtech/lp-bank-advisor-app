@@ -25,7 +25,7 @@ export const Header = () => {
                 <div className="row align-items-center">
                     <div className="col-md-6">
                         <div className="d-flex flex-column">
-                            <p className="ff-bold fs-2 text-white">
+                            <p className="ff-bold fs-2 text-white" style={{ marginTop: window.screen.width > 767 ? 10 : 100 }}>
                                 Garanta seu ID de Especialista e seja ÚNICO no mercado financeiro!
                             </p>
                             <p className="ff-bold fs-6 text-secondary">
@@ -54,7 +54,7 @@ export const Header = () => {
                                     </div>
                                     <div className="pt-3">
                                         <img src={item.icon} alt="" className="img-fluid" />
-                                        <p className="text-white ff-bold fs-6">{item.text}</p>
+                                        <p className="text-white ff-bold fs-6 pt-2">{item.text}</p>
                                     </div>
                                 </div>
                             </div>

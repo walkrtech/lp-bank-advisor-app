@@ -1,33 +1,33 @@
 export const Plans = () => {
     return (
-        <div className="" style={{ backgroundColor: '#e7e9ed' }}>
+        <div className="background-white pt-5 pb-5">
             <div className="container">
-                <p className="ff-regular text-secondary">PLANOS</p>
-                <p className="ff-bold text-primary" style={{ fontSize: 32 }}>Escolha o plano certo para seu crescimento</p>
-                <p className="ff-regular text-gray" style={{ fontSize: 18 }}>Comece com o plano grátis e explore nosso ecossistema por tempo ilimitado</p>
+                <p className="ff-regular text-secondary text-start">PLANOS</p>
+                <p className="ff-bold text-primary fs-3" style={{ letterSpacing: '-2%', lineHeight: '130%' }}>Escolha o plano certo<br />para seu crescimento</p>
+                <p className="ff-regular text-gray fs-6" style={{ fontSize: 18 }}>Comece com o plano grátis e explore nosso ecossistema por tempo ilimitado</p>
 
                 <div className="row">
                     <div className="col-md-4 col-12 mb-4">
                         <div className="container free-card p-4">
                             <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/freeIcon.svg" alt="" />
-                            <p className="ff-medium text-primary">Free</p>
-                            <p className="ff-regular text-gray">Crie seu cadastro sem custo e conheça o Ecossistema</p>
+                            <p className="ff-medium text-primary fs-3">Free</p>
+                            <p className="ff-regular text-gray fs-6">Crie seu cadastro sem custo e conheça o Ecossistema</p>
 
-                            <div className="pt-5">
-                                <p className="ff-bold text-primary" style={{ fontSize: 48 }}>Free</p>
+                            <div className="pt-3 pb-5">
+                                <p className="ff-bold text-primary fs-1">Free</p>
                             </div>
 
                             <div className="d-flex gap-3">
                                 <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-gray">ID de Especialista</p>
+                                <p className="ff-semiBold text-gray fs-6">ID de Especialista</p>
                             </div>
                             <div className="d-flex gap-3">
                                 <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-gray">Dados Financeiros</p>
+                                <p className="ff-semiBold text-gray fs-6">Dados Financeiros</p>
                             </div>
                             <div className="d-flex gap-3">
                                 <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-gray">Relacionamento</p>
+                                <p className="ff-semiBold text-gray fs-6">Relacionamento</p>
                             </div>
                         </div>
                     </div>

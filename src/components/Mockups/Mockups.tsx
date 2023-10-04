@@ -34,12 +34,25 @@ export const Mockups = () => {
     ]
 
     return (
-        <div className="background-mockup">
+        <div className="background-mockup pb-5">
             <div className="container pt-5">
                 <p className="ff-regular text-secondary text-start">SEU PROJETO FINANCEIRO DE VIDA</p>
-                <p className="ff-bold text-white text-start fs-2">Entenda como vamos te ajudar a realizar os sonhos e objetivos dos seus clientes com o WalkrApp</p>
+                <p className="ff-regular text-white text-center">Baixe Agora</p>
+                <div className="d-flex justify-content-end gap-3">
+                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="" />
+                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="" />
+                </div>
+                {window.screen.width > 767 ?
+                    <p className="ff-bold text-white text-start fs-2">Entenda como vamos te ajudar a<br />realizar os sonhos e objetivos dos seus<br />clientes com o WalkrApp</p>
+                    :
+                    <p className="ff-bold text-white text-start fs-2 mt-5">Entenda como vamos te ajudar a realizar os sonhos e objetivos dos seus clientes com o WalkrApp</p>
+                }
 
+
+
+                <div className="mt-5"></div>
                 <div className="tab bg-white position-absolute" style={{ height: 200, width: 2.5 }}></div>
+
 
                 <div className="row container">
                     <div className="col-md-4 col-12">
@@ -56,7 +69,7 @@ export const Mockups = () => {
                         <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/mockups-iphone.svg" alt="Imagem do meio" />
                     </div>
 
-                    <div className="col-md-4 col-12">
+                    <div className="col-md-4 col-12 mt-3">
                         {arrData.slice(3).map((item, index) => (
                             <div key={index}>
                                 <img className="img-fluid" src={item.icon} alt="Ícone" />

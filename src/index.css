@@ -51,7 +51,10 @@
 }
 
 .background-white {
-  background-color: #FAFAFA;
+  background-image: url(https://walkr-bucket.s3.amazonaws.com/bg-white.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .navbar-scrolled {
@@ -92,7 +95,5 @@
   background-image: url(https://walkr-bucket.s3.amazonaws.com/faq.svg);
 }
 
-.more {
-  height: 18px;
-  width: 18px;
-}
+
+

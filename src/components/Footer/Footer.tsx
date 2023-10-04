@@ -39,7 +39,7 @@ export const Footer = () => {
                             <p className="ff-medium text-white text-center">WalkrApp</p>
                             <div className="d-md-flex gap-4 justify-content-center align-items-center">
                                 <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="" />
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android.svg" alt="" />
+                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export const Footer = () => {
                             <p className="ff-medium text-white text-center">Walkr Bank</p>
                             <div className="d-md-flex gap-4 justify-content-center align-items-center">
                                 <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="" />
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android.svg" alt="" />
+                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -66,16 +66,16 @@ export const Footer = () => {
                     <div className="col-md-6 col-12">
                         <div className="d-md-none">
                             {questionsData.map((item, index) => (
-                                <div key={index} className="d-flex gap-2">
-                                    <p className="more text-white">+</p>
+                                <div key={index} className="d-flex align-items-center gap-3 mt-2">
+                                    <p className="text-white fs-3">+</p>
                                     <p className="text-white ff-semiBold">{item.question}</p>
                                 </div>
                             ))}
                         </div>
                         <div className="d-none d-md-block">
                             {questionsData.map((item, index) => (
-                                <div key={index} className="d-flex gap-2">
-                                    <p className="more text-white">+</p>
+                                <div key={index} className="d-flex gap-3 align-items-center">
+                                    <p className="text-white fs-3">+</p>
                                     <p className="text-white ff-semiBold">{item.question}</p>
                                 </div>
                             ))}
