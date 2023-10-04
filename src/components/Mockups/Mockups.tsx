@@ -36,12 +36,8 @@ export const Mockups = () => {
     return (
         <div id="WalkrApp" className="background-mockup pb-5">
             <div className="container pt-5">
-                <p className="ff-regular text-secondary text-start">SEU PROJETO FINANCEIRO DE VIDA</p>
-                <p className="ff-regular text-white text-center">Baixe Agora</p>
-                <div className="d-flex justify-content-end gap-3">
-                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="" />
-                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="" />
-                </div>
+                <p className="ff-bold text-secondary text-start">SEU PROJETO FINANCEIRO DE VIDA</p>
+
                 {window.screen.width > 767 ?
                     <p className="ff-bold text-white text-start fs-2">Entenda como vamos te ajudar a<br />realizar os sonhos e objetivos dos seus<br />clientes com o WalkrApp</p>
                     :

@@ -2,13 +2,14 @@ export const Plans = () => {
     return (
         <div id="Planos" className="background-white pt-5 pb-5">
             <div className="container">
-                <p className="ff-regular text-secondary text-start">PLANOS</p>
+                <p className="ff-bold text-secondary text-start">PLANOS</p>
                 <p className="ff-bold text-primary fs-3" style={{ letterSpacing: '-2%', lineHeight: '130%' }}>Escolha o plano certo<br />para seu crescimento</p>
                 <p className="ff-regular text-gray fs-6" style={{ fontSize: 18 }}>Comece com o plano grátis e explore nosso ecossistema por tempo ilimitado</p>
 
                 <div className="row">
+                    
                     <div className="col-md-4 col-12 mb-4">
-                        <div className="free-card p-4">
+                        <div className="free-card p-5">
                             <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/freeIcon.svg" alt="" />
                             <p className="ff-medium text-primary fs-3 pt-3">Free</p>
                             <p className="ff-regular text-gray fs-6">Crie seu cadastro sem custo e conheça o Ecossistema</p>
@@ -33,7 +34,7 @@ export const Plans = () => {
                     </div>
 
                     <div className="col-md-4 col-12 mb-4">
-                        <div className="premium-card p-4">
+                        <div className="premium-card p-5">
                             <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/premiumIcon.svg" alt="" />
                             <p className="ff-medium text-white fs-3 pt-3">Premium</p>
                             <p className="ff-regular text-white">Todos os benefícios FREE mais as vantagens exclusivas</p>
@@ -70,7 +71,7 @@ export const Plans = () => {
                             <img className="img-fluid" src="https://advisor-walkr-bucket.s3.amazonaws.com/Logo+WalkrAdvisor.svg" alt="" />
                             <p className="ff-bold text-center pt-2">Insira os dados do seu cadastro</p>
 
-                            <div className="bg-white p-2 rounded">
+                            <div className="bg-white p-4 rounded">
                                 <div className="d-flex flex-column">
                                     <p className="ff-bold text-gray mt-2">CPF*</p>
                                     <input type="text" className="border rounded" />

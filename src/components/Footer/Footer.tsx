@@ -111,11 +111,8 @@ export const Footer = () => {
 
 
                 <div className="d-flex mt-4 align-items-center">
-                    <p className="ff-regular text-white text-start">@2022 Walkr</p>
-                    <div className="d-flex mx-auto gap-5">
-                        <p className="ff-regular text-white">Contrato de Comissão</p>
-                        <p className="ff-regular text-white">Termos de Sigilo</p>
-                    </div>
+                    <p className="ff-regular text-white text-start">© 2023 – 41.339.465/0001-59 – Walkr Tecnologia Ltda.</p>
+
                 </div>
 
             </div>

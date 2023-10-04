@@ -68,12 +68,15 @@
   background-image: url(https://walkr-bucket.s3.amazonaws.com/freeCard.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 40px;
 }
 
 .premium-card {
   background-image: url(https://walkr-bucket.s3.amazonaws.com/premiumCard.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 40px;
+
 }
 
 .advisor-card {
@@ -81,7 +84,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
-  min-height: 300px;
 }
 
 .blue-risked {
