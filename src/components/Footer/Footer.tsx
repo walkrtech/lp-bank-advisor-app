@@ -110,9 +110,15 @@ export const Footer = () => {
                 <div className="" style={{ height: 3, backgroundColor: '#033C59' }}></div>
 
 
-                <div className="d-flex mt-4 align-items-center">
-                    <p className="ff-regular text-white text-start">© 2023 – 41.339.465/0001-59 – Walkr Tecnologia Ltda.</p>
 
+                <div className="d-flex justify-content-between  pt-5">
+                    <p className="ff-regular text-white text-start">© 2023 – 41.339.465/0001-59 – Walkr Tecnologia Ltda.</p>
+                    <div className="d-flex gap-3">
+                        <i className="fa-brands fa-facebook text-white"></i>
+                        <i className="fa-brands fa-linkedin text-white"></i>
+                        <i className="fa-brands fa-instagram text-white"></i>
+                        <i className="fa-brands fa-youtube text-white"></i>
+                    </div>
                 </div>
 
             </div>

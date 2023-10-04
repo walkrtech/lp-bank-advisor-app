@@ -28,6 +28,14 @@
   color: #033C59 !important;
 }
 
+.bg-primary {
+  background-color: #033C59 !important;
+}
+
+.bg-gray {
+  background-color: #cacfd5 !important;
+}
+
 .text-secondary {
   color: #29BCBA !important;
 }
@@ -109,9 +117,10 @@
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease; 
+  transition: max-height 0.3s ease;
 }
 
 .answer.show {
-  max-height: 1000px; /* Um valor grande para garantir que a resposta seja exibida totalmente */
+  max-height: 1000px;
+  /* Um valor grande para garantir que a resposta seja exibida totalmente */
 }

@@ -1,4 +1,11 @@
 export const Plans = () => {
+
+    const handleSubmit = () => {
+        alert("Solicitação registrada com sucesso!")
+    }
+
+
+
     return (
         <div id="Planos" className="background-white pt-5 pb-5">
             <div className="container">
@@ -7,7 +14,7 @@ export const Plans = () => {
                 <p className="ff-regular text-gray fs-6" style={{ fontSize: 18 }}>Comece com o plano grátis e explore nosso ecossistema por tempo ilimitado</p>
 
                 <div className="row">
-                    
+
                     <div className="col-md-4 col-12 mb-4">
                         <div className="free-card p-5">
                             <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/freeIcon.svg" alt="" />
@@ -29,6 +36,14 @@ export const Plans = () => {
                             <div className="d-flex gap-3">
                                 <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
                                 <p className="ff-semiBold text-gray fs-6">Relacionamento</p>
+                            </div>
+                            <div className="d-flex gap-3">
+                                <i className="fa-solid fa-check text-white"></i>
+                                <p className="ff-semiBold text-white">ID 25% DESCONTO</p>
+                            </div>
+                            <div className="d-flex gap-3">
+                                <i className="fa-solid fa-check text-white"></i>
+                                <p className="ff-semiBold text-white">Tele Medicina</p>
                             </div>
                         </div>
                     </div>
@@ -84,15 +99,18 @@ export const Plans = () => {
 
                                     <div className="d-flex mt-4">
                                         <input type="checkbox" className="align-items-center" />
-                                        <p className="ff-bold text-gray ps-3">Li e estou de acordo com os <u style={{ color: '#2070e5' }}>Termos de Sigilo</u> do sistema WalkrAdvisor</p>
+                                        <p className="ff-bold text-gray ps-3">Li e estou de acordo com os <u style={{ color: '#2070e5' }}>Termos de Sigilo</u> do sistema Walkr Advisor</p>
                                     </div>
                                     <div className="d-flex mt-4">
                                         <input type="checkbox" className="align-items-center" />
-                                        <p className="ff-bold text-gray ps-3">Li e estou de acordo com o <u style={{ color: '#2070e5' }}>Contrato de Comissão</u> do sistema WalkrAdvisor</p>
+                                        <p className="ff-bold text-gray ps-3">Li e estou de acordo com o <u style={{ color: '#2070e5' }}>Contrato de Comissão</u> do sistema Walkr Advisor</p>
+                                    </div>
+                                    <div className="d-flex flex-column mt-4 gap-3">
+                                        <button type="button" className="btn bg-primary text-white ff-semiBold" onClick={() => handleSubmit()}>Registrar Solicitação</button>
+                                        <button className="btn bg-gray">Voltar</button>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
