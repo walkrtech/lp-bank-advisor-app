@@ -47,13 +47,13 @@ export const Header = () => {
                 <div className="row">
                     {cardData.map((item, index) => (
                         <div key={index} className="col-md-4 mb-3">
-                            <div className='border p-3' style={{ borderRadius: '20px 20px 0px 20px', height: '100%', backgroundColor: index === 0 ? '#26afb1' : 'transparent' }}>
-                                <div className="d-flex flex-column ">
+                            <div className='border p-3' style={{ borderRadius: '20px', height: '100%', backgroundColor: index === 0 ? '#26afb1' : 'transparent' }}>
+                                <div className="d-flex flex-column h-100">
                                     <div className="text-center">
-                                        <img src={item.image} alt="" className="img-fluid" />
+                                        <img src={item.image} alt="" className="img-fluid" style={{ height: '40px', objectFit: 'contain' }} />
                                     </div>
                                     <div className="pt-3">
-                                        <img src={item.icon} alt="" className="img-fluid" />
+                                        <img src={item.icon} alt="" className="img-fluid" style={{ height: '40px', objectFit: 'contain' }} />
                                         <p className="text-white ff-bold fs-6 pt-2">{item.text}</p>
                                     </div>
                                 </div>

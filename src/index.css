@@ -124,3 +124,7 @@
   max-height: 1000px;
   /* Um valor grande para garantir que a resposta seja exibida totalmente */
 }
+
+.nav-item :hover {
+  color: gray !important
+}
