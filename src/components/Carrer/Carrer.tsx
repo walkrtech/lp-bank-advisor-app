@@ -2,7 +2,7 @@
 
 export const Carrer = () => {
     return (
-        <div className="background-white pb-5 pt-5">
+        <div id="walkrBank" className="background-white pb-5 pt-5">
             <div className="container">
 
 

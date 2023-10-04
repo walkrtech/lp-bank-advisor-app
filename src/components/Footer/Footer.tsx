@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 
 export const Footer = () => {
@@ -29,35 +30,42 @@ export const Footer = () => {
         },
     ]
 
+    const [showAnswer, setShowAnswer] = useState<boolean>(false)
+    const [selectedIndex, setSelectedIndex] = useState<number>()
+
     return (
-        <div className="background-footer p-4">
+        <div id="FAQ" className="background-footer p-4">
             <div className="">
-                <div className="row">
+                <div className="row flex-md-row flex-column">
+
                     <div className="col-md-6 col-12 mb-4">
-                        <div className="blue-risked d-flex flex-column align-items-center justify-content-center p-5">
-                            <p className="ff-medium text-secondary text-center">BAIXE AGORA</p>
-                            <p className="ff-medium text-white text-center">WalkrApp</p>
-                            <div className="d-md-flex gap-4 justify-content-center align-items-center">
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="" />
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="" />
+                        <div className="blue-risked p-5">
+                            <p className="ff-semiBold text-secondary text-center">BAIXE AGORA</p>
+                            <p className="ff-bold text-white text-center fs-2">WalkrApp</p>
+                            <div className="d-md-flex d-flex flex-md-row flex-column gap-4 justify-content-center align-items-center">
+                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="Apple" />
+                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="Android" />
                             </div>
                         </div>
                     </div>
+
                     <div className="col-md-6 col-12">
-                        <div className="blue-risked d-flex flex-column align-items-center justify-content-center p-5">
-                            <p className="ff-medium text-secondary text-center">BAIXE AGORA</p>
-                            <p className="ff-medium text-white text-center">Walkr Bank</p>
-                            <div className="d-md-flex gap-4 justify-content-center align-items-center">
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="" />
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="" />
+                        <div className="blue-risked p-5">
+                            <p className="ff-semiBold text-secondary text-center">BAIXE AGORA</p>
+                            <p className="ff-bold text-white text-center fs-2">Walkr Bank</p>
+                            <div className="d-md-flex d-flex flex-md-row flex-column gap-4 justify-content-center align-items-center">
+                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="Apple" />
+                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="Android" />
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div className="d-md-flex mt-2 justify-content-around">
+
+                <div className="d-md-flex mt-2 justify-content-around pt-3">
                     <div>
-                        <p className="ff-bold text-white">Ficou com alguma dúvida?</p>
+                        <p className="ff-bold text-white fs-3">Ficou com alguma dúvida?</p>
                         <div className="d-flex gap-2">
                             <img src="https://walkr-bucket.s3.amazonaws.com/whatsappIcon.svg" alt="" />
                             <p className="ff-regular text-white mt-4">Entre em contato</p>
@@ -66,18 +74,34 @@ export const Footer = () => {
                     <div className="col-md-6 col-12">
                         <div className="d-md-none">
                             {questionsData.map((item, index) => (
-                                <div key={index} className="d-flex align-items-center gap-3 mt-2">
-                                    <p className="text-white fs-3">+</p>
-                                    <p className="text-white ff-semiBold">{item.question}</p>
-                                </div>
+                                <>
+                                    <div onClick={() => { setShowAnswer(!showAnswer); setSelectedIndex(index) }} key={index}
+                                        className="pointer d-flex align-items-center gap-3 mt-2">
+                                        <p className="text-white fs-3">+</p>
+                                        <p className="text-white ff-semiBold">{item.question}</p>
+                                    </div>
+                                    {showAnswer && index == selectedIndex &&
+                                        <div className="">
+                                            <p className="text-white ff-regular "> {item.answer}</p>
+                                        </div>
+                                    }
+                                </>
                             ))}
                         </div>
                         <div className="d-none d-md-block">
                             {questionsData.map((item, index) => (
-                                <div key={index} className="d-flex gap-3 align-items-center">
-                                    <p className="text-white fs-3">+</p>
-                                    <p className="text-white ff-semiBold">{item.question}</p>
-                                </div>
+                                <>
+                                    <div onClick={() => { setShowAnswer(!showAnswer); setSelectedIndex(index) }} key={index}
+                                        className="pointer d-flex gap-3 align-items-center">
+                                        <p className="text-white fs-3">+</p>
+                                        <p className="text-white ff-semiBold">{item.question}</p>
+                                    </div>
+                                    {showAnswer && index == selectedIndex &&
+                                        <div className="">
+                                            <p className="text-white ff-regular "> {item.answer}</p>
+                                        </div>
+                                    }
+                                </>
                             ))}
                         </div>
                     </div>
@@ -85,14 +109,16 @@ export const Footer = () => {
 
                 <div className="" style={{ height: 3, backgroundColor: '#033C59' }}></div>
 
-                <p className="ff-regular text-white ">@2022 Walkr</p>
 
-                <div className="d-flex justify-content-center gap-5">
-                    <p className="ff-regular text-white">Contrato de Comissão</p>
-                    <p className="ff-regular text-white">Termos de Sigilo</p>
+                <div className="d-flex mt-4 align-items-center">
+                    <p className="ff-regular text-white text-start">@2022 Walkr</p>
+                    <div className="d-flex mx-auto gap-5">
+                        <p className="ff-regular text-white">Contrato de Comissão</p>
+                        <p className="ff-regular text-white">Termos de Sigilo</p>
+                    </div>
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }

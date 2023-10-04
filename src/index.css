@@ -51,7 +51,7 @@
 }
 
 .background-white {
-  background-image: url(https://walkr-bucket.s3.amazonaws.com/bg-white.svg);
+  background-image: url('https://walkr-bucket.s3.amazonaws.com/bg-white+(1).svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,7 +80,8 @@
   background-color: #f8f9fa;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 20;
+  border-radius: 20px;
+  min-height: 300px;
 }
 
 .blue-risked {
@@ -92,8 +93,23 @@
 }
 
 .background-footer {
-  background-image: url(https://walkr-bucket.s3.amazonaws.com/faq.svg);
+  background-image: url(https://walkr-bucket.s3.amazonaws.com/backgroundFooter.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }
 
+.pointer {
+  cursor: pointer;
+}
 
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; 
+}
 
+.answer.show {
+  max-height: 1000px; /* Um valor grande para garantir que a resposta seja exibida totalmente */
+}

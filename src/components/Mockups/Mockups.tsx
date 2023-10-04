@@ -34,7 +34,7 @@ export const Mockups = () => {
     ]
 
     return (
-        <div className="background-mockup pb-5">
+        <div id="WalkrApp" className="background-mockup pb-5">
             <div className="container pt-5">
                 <p className="ff-regular text-secondary text-start">SEU PROJETO FINANCEIRO DE VIDA</p>
                 <p className="ff-regular text-white text-center">Baixe Agora</p>

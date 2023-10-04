@@ -33,24 +33,24 @@ export const Navbar = () => {
                                 <a className="nav-link ff-semiBold text-white" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#">WalkrBank</a>
+                                <a className="nav-link ff-semiBold text-white" href="#walkrBank">WalkrBank</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#">WalkrApp</a>
+                                <a className="nav-link ff-semiBold text-white" href="#WalkrApp">WalkrApp</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#">Planos</a>
+                                <a className="nav-link ff-semiBold text-white" href="#Planos">Planos</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#">FAQ's</a>
+                                <a className="nav-link ff-semiBold text-white" href="#FAQ">FAQ's</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="d-flex align-items-center">
                         {/* Botões de login e cadastre-se */}
-                        <button type="button" className={`btn btn-sm btn-outline-secondary border-0 text-white me-2`}>Login</button>
-                        <button type="button" className={`btn btn-light btn-sm`}>Cadastre-se</button>
+                        <button type="button" className={`btn btn-sm btn-outline-secondary border-0 text-white me-2 ff-semiBold`} style={{letterSpacing: 1.58}}>Login</button>
+                        <button type="button" className={`btn btn-light btn-sm ff-bold`} style={{letterSpacing: 1.58}}>Cadastre-se</button>
                     </div>
                 </div>
             </div>
