@@ -1,9 +1,59 @@
+import { SubmitHandler, useForm } from 'react-hook-form';
+import InputMask from "react-input-mask";
+import { isValidCPF } from '../../utils/isValidCPF.util';
+import requestService from '../../services/request.service';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import { extractErrorData } from '../../hooks/response-api/extract-error-data';
+import { isValidEmail } from '../../utils/isValidEmail.util';
+
+
+type RequestInterface = {
+    cpf: string
+    name: string
+    email: string
+    phone: string
+}
+
 export const Plans = () => {
 
-    const handleSubmit = () => {
-        alert("Solicitação registrada com sucesso!")
-    }
+    const { register, handleSubmit } = useForm<RequestInterface>();
+    const [terms, setTerms] = useState<boolean>(false)
+    const [email, setEmail] = useState<string>('')
 
+
+    const onInvalid = (errors: any) => console.log(errors)
+
+    const onSubmit: SubmitHandler<RequestInterface> = (async (data: RequestInterface) => {
+        if (terms) {
+            await requestService.register({
+                name: data.name,
+                email: data.email,
+                cpf: data.cpf,
+                phone: data.phone
+            }).then(async () => {
+                await requestService.acceptRequest({
+                    name: data.name,
+                    email: data.email,
+                    cpf: data.cpf,
+                    phone: data.phone,
+                    percent: 0
+                }).then(() => {
+                    toast.success('Você receberá uma senha temporária por email!')
+                }).catch((err: any) => {
+                    toast.warning(extractErrorData(err));
+                })
+            }).catch((err: any) => {
+                toast.warning(extractErrorData(err));
+            })
+        } else {
+            toast.error('Você deve ler e estar de acordo com os Termos de Sigilo!')
+        }
+    });
+
+    const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setEmail(event.target.value.toLowerCase().replace(/\s/g, ''));
+    };
 
 
     return (
@@ -87,29 +137,53 @@ export const Plans = () => {
                             <p className="ff-bold text-center pt-2">Insira os dados do seu cadastro</p>
 
                             <div className="bg-white p-4 rounded">
-                                <div className="d-flex flex-column">
-                                    <p className="ff-bold text-gray mt-2">CPF*</p>
-                                    <input type="text" className="border rounded" />
-                                    <p className="ff-bold text-gray mt-2">Nome*</p>
-                                    <input type="text" className="border rounded" />
-                                    <p className="ff-bold text-gray mt-2">Email*</p>
-                                    <input type="text" className="border rounded" />
-                                    <p className="ff-bold text-gray mt-2">Celular com DDD*</p>
-                                    <input type="text" className="border rounded" />
+                                <form className="" onSubmit={handleSubmit(onSubmit, onInvalid)}>
+                                    <div className="d-flex flex-column">
 
-                                    <div className="d-flex mt-4">
-                                        <input type="checkbox" className="align-items-center" />
-                                        <p className="ff-bold text-gray ps-3">Li e estou de acordo com os <u style={{ color: '#2070e5' }}>Termos de Sigilo</u> do sistema Walkr Advisor</p>
+                                        <label htmlFor="cpf" className="ff-semiBold text-gray mt-3">CPF*</label>
+                                        <InputMask
+                                            {...register("cpf", { validate: (value: string) => isValidCPF(value) || "CPF inválido" })}
+                                            id="cpf"
+                                            name="cpf"
+                                            mask="999.999.999-99"
+                                            type="text"
+                                            className="w-full p-1 border border-gray-300 rounded mt-1"
+                                            required={true}
+                                        />
+
+                                        <label htmlFor="name" className="ff-semiBold text-gray mt-3">Nome*</label>
+                                        <input {...register("name", { required: true })} id="name" name="name" type="text" className="input border rounded mt-1 p-1" />
+
+                                        <label htmlFor="email" className="ff-semiBold text-gray mt-3">Email*</label>
+                                        <input {...register("email", { required: true, validate: (value: string) => isValidEmail(value) || "E-mail inválido" })}
+                                            id="email" name="email" value={email} onChange={handleEmailChange} type="text"
+                                            className="input border rounded mt-1 p-1" />
+
+                                        <label htmlFor="phone" className="ff-semiBold text-gray mt-3">Celular com DDD*</label>
+                                        <InputMask
+                                            {...register("phone")}
+                                            id="phone"
+                                            name="phone"
+                                            mask="(99) 99999-9999"
+                                            type="text"
+                                            className="w-full p-1 border border-gray-300 rounded mt-1"
+                                            required={true}
+                                        />
+
+                                        <div className="d-flex mt-4">
+                                            <input checked={terms} onChange={() => setTerms(!terms)} type="checkbox" id="terms" name="terms" className="h-6 w-6 text-blue-300 rounded cursor-pointer" />
+                                            <p className="ff-bold text-gray ps-3">Li e estou de acordo com os <u style={{ color: '#2070e5' }}>Termos de Sigilo</u> do sistema Walkr Advisor</p>
+                                        </div>
+                                        <div className="d-flex mt-4">
+                                            <input checked={terms} onChange={() => setTerms(!terms)} type="checkbox" id="terms" name="terms" className="h-6 w-6 text-blue-300 rounded cursor-pointer" />
+                                            <p className="ff-bold text-gray ps-3">Li e estou de acordo com o <u style={{ color: '#2070e5' }}>Contrato de Comissão</u> do sistema Walkr Advisor</p>
+                                        </div>
+                                        <div className="d-flex flex-column mt-4 gap-3">
+                                            <button type='submit' className="btn bg-primary text-white ff-semiBold">Registrar Solicitação</button>
+                                            <button className="btn bg-gray ff-semiBold text-black">Voltar</button>
+                                        </div>
                                     </div>
-                                    <div className="d-flex mt-4">
-                                        <input type="checkbox" className="align-items-center" />
-                                        <p className="ff-bold text-gray ps-3">Li e estou de acordo com o <u style={{ color: '#2070e5' }}>Contrato de Comissão</u> do sistema Walkr Advisor</p>
-                                    </div>
-                                    <div className="d-flex flex-column mt-4 gap-3">
-                                        <button type="button" className="btn bg-primary text-white ff-semiBold" onClick={() => handleSubmit()}>Registrar Solicitação</button>
-                                        <button className="btn bg-gray">Voltar</button>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -43,8 +43,12 @@ export const Footer = () => {
                             <p className="ff-semiBold text-secondary text-center">BAIXE AGORA</p>
                             <p className="ff-bold text-white text-center fs-2">WalkrApp</p>
                             <div className="d-md-flex d-flex flex-md-row flex-column gap-4 justify-content-center align-items-center">
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="Apple" />
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="Android" />
+                                <a href="https://apps.apple.com/br/app/walkrapp/id1617544867">
+                                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="Apple" />
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=walkrApp.apk">
+                                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="Android" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -54,8 +58,12 @@ export const Footer = () => {
                             <p className="ff-semiBold text-secondary text-center">BAIXE AGORA</p>
                             <p className="ff-bold text-white text-center fs-2">Walkr Bank</p>
                             <div className="d-md-flex d-flex flex-md-row flex-column gap-4 justify-content-center align-items-center">
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="Apple" />
-                                <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="Android" />
+                                <a href="https://apps.apple.com/br/app/walkr-bank/id1611050104">
+                                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-apple.svg" alt="Apple" />
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=br.com.idez.walkrbank">
+                                    <img src="https://walkr-bucket.s3.amazonaws.com/btn-store-android+(2).svg" alt="Android" />
+                                </a>
                             </div>
                         </div>
                     </div>

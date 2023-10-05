@@ -128,3 +128,7 @@
 .nav-item :hover {
   color: gray !important
 }
+
+.input {
+  margin-top: -5px;
+}

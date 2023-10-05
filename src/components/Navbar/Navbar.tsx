@@ -19,6 +19,8 @@ export const Navbar = () => {
         };
     }, []);
 
+
+
     return (
         <nav className={`navbar navbar-expand-lg position-fixed w-100 z-1 pt-3`} style={{ backgroundColor: scrolling ? '#033C59' : 'transparent' }}>
             <div className="container">
@@ -48,9 +50,12 @@ export const Navbar = () => {
                     </div>
 
                     <div className="d-flex align-items-center">
-                        {/* Botões de login e cadastre-se */}
-                        <button type="button" className={`btn btn-sm btn-outline-secondary border-0 text-white me-2 ff-semiBold`} style={{letterSpacing: 1.58}}>Login</button>
-                        <button type="button" className={`btn btn-light btn-sm ff-semiBold`} style={{letterSpacing: 1.58}}>Cadastre-se</button>
+                        <a href="https://advisor.walkr.app/">
+                            <button type="button" className={`btn btn-sm btn-outline-secondary border-0 text-white me-2 ff-semiBold`} style={{ letterSpacing: 1.58 }}>Login</button>
+                        </a>
+                        <a href="https://advisor.walkr.app/requestFirstAccess">
+                            <button type="button" className={`btn btn-light btn-sm ff-semiBold`} style={{ letterSpacing: 1.58 }}>Cadastre-se</button>
+                        </a>
                     </div>
                 </div>
             </div>
