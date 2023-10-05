@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "ec2": "vite --host 0.0.0.0"
+    "ec2": "vite --host 0.0.0.0",
+    "start": "vite"
   },
   "dependencies": {
     "axios": "^1.5.1",
