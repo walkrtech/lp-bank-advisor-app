@@ -22,7 +22,7 @@ export const Navbar = () => {
 
 
     return (
-        <nav className={`navbar navbar-expand-lg position-fixed w-100 z-1 pt-3`} style={{ backgroundColor: scrolling ? '#022c40' : 'transparent' }}>
+        <nav className={`navbar navbar-expand-lg position-fixed w-100 z-1 pt-2`} style={{ backgroundColor: scrolling ? '#022c40' : 'transparent' }}>
             <div className="container">
                 <div className="d-flex align-items-center justify-content-between w-100">
                     <a className="navbar-brand" href="#">

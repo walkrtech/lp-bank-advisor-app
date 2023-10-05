@@ -32,6 +32,10 @@
   background-color: #033C59 !important;
 }
 
+.btn-disabled {
+  background-color: #cacfd5 !important;
+}
+
 .bg-gray {
   background-color: #cacfd5 !important;
 }
