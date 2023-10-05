@@ -47,10 +47,12 @@ export const Navbar = () => {
                     </div>
 
                     <div className="d-flex align-items-center">
-                        <a href="https://advisor.walkr.app/">
+                        {/* <a href="https://advisor.walkr.app/"> */}
+                        <a href="https://walkr-advisor-front.vercel.app/">
                             <button type="button" className={`btn btn-sm btn-outline-secondary border-0 text-white me-2 ff-semiBold`} style={{ letterSpacing: 1.58 }}>Login</button>
                         </a>
-                        <a href="https://advisor.walkr.app/requestFirstAccess">
+                        {/* <a href="https://advisor.walkr.app/requestFirstAccess"> */}
+                        <a href="https://walkr-advisor-front.vercel.app/requestFirstAccess">
                             <button type="button" className={`btn btn-light btn-sm ff-semiBold`} style={{ letterSpacing: 1.58 }}>Cadastre-se</button>
                         </a>
                     </div>
