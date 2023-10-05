@@ -75,8 +75,13 @@ export const Footer = () => {
                     <div>
                         <p className="ff-bold text-white fs-3">Ficou com alguma dúvida?</p>
                         <div className="d-flex gap-2">
-                            <img src="https://walkr-bucket.s3.amazonaws.com/whatsappIcon.svg" alt="" />
-                            <p className="ff-regular text-white mt-4">Entre em contato</p>
+                            <a
+                                target="_blank"
+                                href="https://wa.me/556136863102?text=Ol%C3%A1%2C%20estou%20com%20d%C3%BAvidas%20a%20respeito%20do%20ID%20de%20Especialista%2C%20poderia%20me%20ajudar%3F"
+                                className="d-flex gap-2">
+                                <img src="https://walkr-bucket.s3.amazonaws.com/whatsappIcon.svg" alt="" />
+                                <p className="ff-regular text-white mt-4">Entre em contato</p>
+                            </a>
                         </div>
                     </div>
                     <div className="col-md-6 col-12">
@@ -122,10 +127,18 @@ export const Footer = () => {
                 <div className="d-flex justify-content-between  pt-5">
                     <p className="ff-regular text-white text-start">© 2023 – 41.339.465/0001-59 – Walkr Tecnologia Ltda.</p>
                     <div className="d-flex gap-3">
-                        <i className="fa-brands fa-facebook text-white"></i>
-                        <i className="fa-brands fa-linkedin text-white"></i>
-                        <i className="fa-brands fa-instagram text-white"></i>
-                        <i className="fa-brands fa-youtube text-white"></i>
+                        <a href="https://www.facebook.com/walkrapp/">
+                            <i className="fa-brands fa-facebook text-white"></i>
+                        </a>
+                        <a href="https://br.linkedin.com/company/walkr-app">
+                            <i className="fa-brands fa-linkedin text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/walkr.app/?hl=en">
+                            <i className="fa-brands fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@WalkrApp">
+                            <i className="fa-brands fa-youtube text-white"></i>
+                        </a>
                     </div>
                 </div>
 

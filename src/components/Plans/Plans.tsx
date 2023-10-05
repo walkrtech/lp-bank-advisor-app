@@ -59,78 +59,80 @@ export const Plans = () => {
     return (
         <div id="Planos" className="background-white pt-5 pb-5">
             <div className="container">
-                <p className="ff-bold text-secondary text-start">PLANOS</p>
-                <p className="ff-bold text-primary fs-3" style={{ letterSpacing: '-2%', lineHeight: '130%' }}>Escolha o plano certo<br />para seu crescimento</p>
-                <p className="ff-regular text-gray fs-6" style={{ fontSize: 18 }}>Comece com o plano grátis e explore nosso ecossistema por tempo ilimitado</p>
-
                 <div className="row">
+                    <div className="col-md-8">
+                        <p className="ff-bold text-secondary text-start">PLANOS</p>
+                        <p className="ff-bold text-primary fs-3" style={{ letterSpacing: '-2%', lineHeight: '130%' }}>Escolha o plano certo<br />para seu crescimento</p>
+                        <p className="ff-regular text-gray fs-6" style={{ fontSize: 18 }}>Comece com o plano grátis e explore nosso ecossistema por tempo ilimitado</p>
 
-                    <div className="col-md-4 col-12 mb-4">
-                        <div className="free-card p-5">
-                            <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/freeIcon.svg" alt="" />
-                            <p className="ff-medium text-primary fs-3 pt-3">Free</p>
-                            <p className="ff-regular text-gray fs-6">Crie seu cadastro sem custo e conheça o Ecossistema</p>
+                        <div className="row">
+                            <div className="col-md-6 col-12 mb-4">
+                                <div className="free-card p-5">
+                                    <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/freeIcon.svg" alt="" />
+                                    <p className="ff-medium text-primary fs-3 pt-3">Free</p>
+                                    <p className="ff-regular text-gray fs-6">Crie seu cadastro sem custo e conheça o Ecossistema</p>
 
-                            <div className="pt-3 pb-5">
-                                <p className="ff-bold text-primary fs-1">Free</p>
+                                    <div className="pt-3 pb-5">
+                                        <p className="ff-bold text-primary fs-1">Free</p>
+                                    </div>
+
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-gray fs-6">ID de Especialista</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-gray fs-6">Dados Financeiros</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-gray fs-6">Relacionamento</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check text-white"></i>
+                                        <p className="ff-semiBold text-white">ID 25% DESCONTO</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check text-white"></i>
+                                        <p className="ff-semiBold text-white">Tele Medicina</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-gray fs-6">ID de Especialista</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-gray fs-6">Dados Financeiros</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-gray fs-6">Relacionamento</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check text-white"></i>
-                                <p className="ff-semiBold text-white">ID 25% DESCONTO</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check text-white"></i>
-                                <p className="ff-semiBold text-white">Tele Medicina</p>
+                            <div className="col-md-6 col-12 mb-4">
+                                <div className="premium-card p-5">
+                                    <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/premiumIcon.svg" alt="" />
+                                    <p className="ff-medium text-white fs-3 pt-3">Premium</p>
+                                    <p className="ff-regular text-white">Todos os benefícios FREE mais as vantagens exclusivas</p>
+
+                                    <div className="pt-3 pb-5">
+                                        <p className="ff-bold text-secondary fs-1">R$ 299 <span className="ff-bold text-secondary fs-6">/mensal</span></p>
+                                    </div>
+
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-white">40% de comissão</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-white">Relatório GOLD</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-white">Banco tarifa ZERO</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-white">ID 25% DESCONTO</p>
+                                    </div>
+                                    <div className="d-flex gap-3">
+                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
+                                        <p className="ff-semiBold text-white">Tele Medicina</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="col-md-4 col-12 mb-4">
-                        <div className="premium-card p-5">
-                            <img className="img-fluid" src="https://walkr-bucket.s3.amazonaws.com/premiumIcon.svg" alt="" />
-                            <p className="ff-medium text-white fs-3 pt-3">Premium</p>
-                            <p className="ff-regular text-white">Todos os benefícios FREE mais as vantagens exclusivas</p>
-
-                            <div className="pt-3 pb-5">
-                                <p className="ff-bold text-secondary fs-1">R$ 299 <span className="ff-bold text-secondary fs-6">/mensal</span></p>
-                            </div>
-
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-white">40% de comissão</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-white">Relatório GOLD</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-white">Banco tarifa ZERO</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-white">ID 25% DESCONTO</p>
-                            </div>
-                            <div className="d-flex gap-3">
-                                <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                <p className="ff-semiBold text-white">Tele Medicina</p>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="col-md-4 col-12 mb-4">
                         <div className="advisor-card p-4">
                             <img className="img-fluid" src="https://advisor-walkr-bucket.s3.amazonaws.com/Logo+WalkrAdvisor.svg" alt="" />
@@ -159,28 +161,28 @@ export const Plans = () => {
                                             id="email" name="email" value={email} onChange={handleEmailChange} type="text"
                                             className="input border rounded mt-1 p-1" />
 
+                                        <label htmlFor="email" className="ff-semiBold text-gray mt-3">Confirmar Email*</label>
+                                        <input {...register("email", { required: true, validate: (value: string) => isValidEmail(value) || "E-mail inválido" })}
+                                            id="email" name="email" value={email} onChange={handleEmailChange} type="text"
+                                            className="input border rounded mt-1 p-1" />
+
                                         <label htmlFor="phone" className="ff-semiBold text-gray mt-3">Celular com DDD*</label>
                                         <InputMask
                                             {...register("phone")}
                                             id="phone"
                                             name="phone"
                                             mask="(99) 99999-9999"
-                                            type="text"
+                                            type="text" 
                                             className="w-full p-1 border border-gray-300 rounded mt-1"
                                             required={true}
                                         />
 
                                         <div className="d-flex mt-4">
-                                            <input checked={terms} onChange={() => setTerms(!terms)} type="checkbox" id="terms" name="terms" className="h-6 w-6 text-blue-300 rounded cursor-pointer" />
-                                            <p className="ff-bold text-gray ps-3">Li e estou de acordo com os <u style={{ color: '#2070e5' }}>Termos de Sigilo</u> do sistema Walkr Advisor</p>
+                                            <input checked={terms} onChange={() => setTerms(!terms)} type="checkbox" id="terms" name="terms" className="h-6 w-6 text-blue-300 rounded cursor-pointer align-self-center " />
+                                            <p className="ff-semiBold text-gray ps-3">Li e estou de acordo com os <u style={{ color: '#2070e5' }}>Termos de Sigilo</u> e <u style={{ color: '#2070e5' }}>Contratos de Comissão</u> do sistema Walkr Advisor</p>
                                         </div>
-                                        <div className="d-flex mt-4">
-                                            <input checked={terms} onChange={() => setTerms(!terms)} type="checkbox" id="terms" name="terms" className="h-6 w-6 text-blue-300 rounded cursor-pointer" />
-                                            <p className="ff-bold text-gray ps-3">Li e estou de acordo com o <u style={{ color: '#2070e5' }}>Contrato de Comissão</u> do sistema Walkr Advisor</p>
-                                        </div>
-                                        <div className="d-flex flex-column mt-4 gap-3">
+                                        <div className="d-flex flex-column mt-2 gap-3">
                                             <button type='submit' className="btn bg-primary text-white ff-semiBold">Registrar Solicitação</button>
-                                            <button className="btn bg-gray ff-semiBold text-black">Voltar</button>
                                         </div>
                                     </div>
                                 </form>

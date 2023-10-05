@@ -47,16 +47,19 @@ export const Mockups = () => {
 
 
                 <div className="mt-5"></div>
-                <div className="tab bg-white position-absolute" style={{ height: 200, width: 2.5 }}></div>
+
+                <div className="tab bg-white position-absolute d-none d-md-flex" style={{ height: 200, width: 2.5 }}></div>
 
 
                 <div className="row container">
                     <div className="col-md-4 col-12">
                         {arrData.slice(0, 3).map((item, index) => (
-                            <div key={index}>
-                                <img className="img-fluid" src={item.icon} alt="Ícone" />
-                                <p className="text-white ff-bold fs-4 mt-2 ">{item.title}</p>
-                                <p className="fs-6 ff-regular " style={{ color: '#A5A5A5' }}>{item.subtitle}</p>
+                            <div key={index} className="d-flex gap-2 align-items-start">
+                                <img className="img-fluid mt-1" src={item.icon} alt="Ícone" />
+                                <div className="d-flex flex-column">
+                                    <p className="text-white ff-bold fs-4">{item.title}</p>
+                                    <p className="fs-6 ff-regular " style={{ color: '#A5A5A5' }}>{item.subtitle}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -67,10 +70,12 @@ export const Mockups = () => {
 
                     <div className="col-md-4 col-12 mt-3">
                         {arrData.slice(3).map((item, index) => (
-                            <div key={index}>
+                            <div key={index} className="d-flex gap-2 align-items-start">
                                 <img className="img-fluid" src={item.icon} alt="Ícone" />
-                                <p className="text-white ff-bold fs-4 mt-2 ">{item.title}</p>
-                                <p className="fs-6 ff-regular" style={{ color: '#A5A5A5' }}>{item.subtitle}</p>
+                                <div className="d-flex flex-column">
+                                    <p className="text-white ff-bold fs-4">{item.title}</p>
+                                    <p className="fs-6 ff-regular" style={{ color: '#A5A5A5' }}>{item.subtitle}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

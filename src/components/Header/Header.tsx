@@ -47,7 +47,7 @@ export const Header = () => {
                 <div className="row">
                     {cardData.map((item, index) => (
                         <div key={index} className="col-md-4 mb-3">
-                            <div className='border p-3' style={{ borderRadius: '20px', height: '100%', backgroundColor: index === 0 ? '#26afb1' : 'transparent' }}>
+                            <div className={`${index === 0 ? 'p-3' : 'border p-3'}`} style={{ borderRadius: '20px', height: '100%', background: index === 0 ? 'linear-gradient(180deg,#29BCBA, #1C5585 96.35%)' : 'transparent' }}>
                                 <div className="d-flex flex-column h-100">
                                     <div className="text-center">
                                         <img src={item.image} alt="" className="img-fluid" style={{ height: '40px', objectFit: 'contain' }} />
