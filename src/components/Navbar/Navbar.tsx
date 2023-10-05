@@ -32,19 +32,16 @@ export const Navbar = () => {
                     <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#">Home</a>
+                                <a className="nav-link ff-regular text-white" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#walkrBank">Walkr Bank</a>
+                                <a className="nav-link ff-regular text-white" href="#WalkrApp">WalkrApp</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#WalkrApp">WalkrApp</a>
+                                <a className="nav-link ff-regular text-white" href="#Planos">Planos</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#Planos">Planos</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link ff-semiBold text-white" href="#FAQ">FAQ's</a>
+                                <a className="nav-link ff-regular text-white" href="#FAQ">FAQ's</a>
                             </li>
                         </ul>
                     </div>
