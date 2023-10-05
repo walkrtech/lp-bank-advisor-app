@@ -192,7 +192,7 @@ export const Plans = () => {
                                             <p className="ff-semiBold text-gray ps-3">Li e estou de acordo com os <a target='_blank' href="https://advisor-walkr-bucket.s3.amazonaws.com/Terno_Sigilo_WALKRADVISOR.pdf"> <u style={{ color: '#2070e5' }}>Termos de Sigilo</u></a> e <a href="https://advisor-walkr-bucket.s3.amazonaws.com/Contrato+de+Comissa%CC%83o+Especialistas.pdf" target='_blank'> <u style={{ color: '#2070e5' }}>Contratos de Comissão</u></a> do sistema Walkr Advisor</p>
                                         </div>
                                         <div className="d-flex flex-column mt-2 gap-3">
-                                            <button   type='submit' className="btn bg-primary text-white ff-semiBold">Registrar Solicitação</button>
+                                            <button disabled={!terms}  type='submit' className="btn bg-primary text-white ff-semiBold">Registrar Solicitação</button>
                                         </div>
                                     </div>
                                 </form>

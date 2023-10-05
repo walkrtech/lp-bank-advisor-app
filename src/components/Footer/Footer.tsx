@@ -124,9 +124,9 @@ export const Footer = () => {
 
 
 
-                <div className="d-flex justify-content-between  pt-5">
+                <div className="d-md-flex d-column justify-content-between  pt-5">
                     <p className="ff-regular text-white text-start">© 2023 – 41.339.465/0001-59 – Walkr Tecnologia Ltda.</p>
-                    <div className="d-flex gap-3">
+                    <div className="d-flex justify-content-center pb-5 gap-3">
                         <a href="https://www.facebook.com/walkrapp/">
                             <i className="fa-brands fa-facebook text-white"></i>
                         </a>
@@ -143,6 +143,6 @@ export const Footer = () => {
                 </div>
 
             </div>
-        </div >
+        </div>
     )
 }
