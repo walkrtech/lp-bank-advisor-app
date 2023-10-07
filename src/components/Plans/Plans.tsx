@@ -83,20 +83,20 @@ export const Plans = () => {
                                     <p className="ff-regular text-gray fs-6">Crie seu cadastro sem custo e conheça o Ecossistema</p>
 
                                     <div className="pt-3 pb-5">
-                                        <p className="ff-bold text-primary fs-1">Free</p>
+                                        <p className="ff-bold text-primary fs-1">Grátis</p>
                                     </div>
 
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-gray fs-6">ID de Especialista</p>
+                                        <p className="ff-regular text-gray" style={{fontSize: 14}}>Crie um ID de Especialista Único sem custo</p>
                                     </div>
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-gray fs-6">Dados Financeiros</p>
+                                        <p className="ff-regular text-gray" style={{fontSize: 14}}>Acesse os dados financeiros básicos do cliente como: Renda, Investimentos e Rentabilidade</p>
                                     </div>
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-gray fs-6">Relacionamento</p>
+                                        <p className="ff-regular text-gray" style={{fontSize: 14}}>Faça relacionamento através do WhatsApp e o E-mail</p>
                                     </div>
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check text-white"></i>
@@ -121,30 +121,27 @@ export const Plans = () => {
 
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-white">40% de comissão</p>
+                                        <p className="ff-regular text-white" style={{fontSize: 14}}>Acesso ao Projeto Financeiro de Vida do cliente em PDF</p>
                                     </div>
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-white">Relatório GOLD</p>
+                                        <p className="ff-regular text-white" style={{fontSize: 14}}>Poderá ser comissionado em 40% dos valores pagos pelo cliente dentro do WalkrApp</p>
                                     </div>
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-white">Banco tarifa ZERO</p>
+                                        <p className="ff-regular text-white" style={{fontSize: 14}}>O ID de Especialista passa a gerar 25% de desconto para o cliente dentro do WalkrApp</p>
                                     </div>
                                     <div className="d-flex gap-3">
                                         <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-white">ID 25% DESCONTO</p>
+                                        <p className="ff-regular text-white" style={{fontSize: 14}}>Terá acesso aos benefícios do Walkr Bank com taxa ZERO</p>
                                     </div>
-                                    <div className="d-flex gap-3">
-                                        <i className="fa-solid fa-check" style={{ color: '#169BC0' }}></i>
-                                        <p className="ff-semiBold text-white">Tele Medicina</p>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4 col-12 mb-4">
-                        <div className="advisor-card p-4">
+                        <div className="advisor-card p-4 ">
                             <img className="img-fluid" src="https://advisor-walkr-bucket.s3.amazonaws.com/Logo+WalkrAdvisor.svg" alt="" />
                             <p className="ff-bold text-center pt-2">Insira os dados do seu cadastro</p>
 
@@ -192,7 +189,7 @@ export const Plans = () => {
                                             <p className="ff-semiBold text-gray ps-3">Li e estou de acordo com os <a target='_blank' href="https://advisor-walkr-bucket.s3.amazonaws.com/Terno_Sigilo_WALKRADVISOR.pdf"> <u style={{ color: '#2070e5' }}>Termos de Sigilo</u></a> e <a href="https://advisor-walkr-bucket.s3.amazonaws.com/Contrato+de+Comissa%CC%83o+Especialistas.pdf" target='_blank'> <u style={{ color: '#2070e5' }}>Contratos de Comissão</u></a> do sistema Walkr Advisor</p>
                                         </div>
                                         <div className="d-flex flex-column mt-2 gap-3">
-                                            <button disabled={!terms}  type='submit' className="btn bg-primary text-white ff-semiBold">Registrar Solicitação</button>
+                                            <button disabled={!terms} type='submit' className="btn bg-primary text-white ff-semiBold">Registrar Solicitação</button>
                                         </div>
                                     </div>
                                 </form>

@@ -98,6 +98,13 @@
   border-radius: 20px;
 }
 
+
+@media only screen and (min-width: 500px) {
+  .advisor-card {
+    margin-top: 100px !important;
+  }
+}
+
 .blue-risked {
   background-image: url(https://walkr-bucket.s3.amazonaws.com/blueRiskedBg.svg);
   background-size: cover;
